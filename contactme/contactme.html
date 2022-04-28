@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="contactme.css">
+    
     <title>Final Project</title>
     
     <div class="header">
@@ -13,30 +13,20 @@
     
     <div>
       <ul class="nav">
-   <li><a href="/Final/">Home</a></li>
-  <li><a href="/Final/shop/shop.html">Shop</a></li>
-  <li><a href="/Final/gear/gear.html">Gear</a></li>
-  <li><a href="/Final/hours/hours.html">Hours</a></li>
-  <li><a href="/Final/contactme/contactme.html">Contact Me</a></li>
+  <li><a href="/">Home</a></li>
+  <li><a href="/about/">Shop</a></li>
+  <li><a href="/work/">Gear</a></li>
+  <li><a href="/clients/">New Products</a></li>
+  <li><a href="/contact/">Contact Me</a></li>
 </ul>
+      <hr>
       </div>
-     
-      </div>
-   
-  </head>
-  
-  <body>
-    <div class="div1"> 
-  <h1> Contact Me</h1>
-  
-   <div style="position:center">
-   <img class="img" src="https://static.vecteezy.com/system/resources/previews/000/602/566/large_2x/vector-coffee-logo.jpg">
     </div>
-  </div>
-  <hr>
-  
+  </head>
+  <body>
 <style>
-body  {box-sizing: border-box;}
+body {font-family: Copperplate, Courier New;}
+* {box-sizing: border-box;}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -67,11 +57,19 @@ input[type=submit]:hover {
   background-color: lightblue;
   padding: 20px;
 }
+  input[type=Reset] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 </style>
 </head>
 <body>
 
-
+<h3>Contact Me</h3>
 
 <div class="container">
   <form action="/action_page.php">
@@ -95,10 +93,13 @@ input[type=submit]:hover {
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
   </form>
 </div>
 
 </body>
+</html>
+
    <footer>
      <div style="background-color: lightblue;  border: 1px solid #ccc;
   border-radius: 20px; padding: 60px">
