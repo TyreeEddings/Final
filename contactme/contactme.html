@@ -6,25 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="contactme.css">
     <title>Final Project</title>
-    
-    <div class="header">
-      <h1>Tyree's Coffee</h1>
-    
-    
-    <div>
-      <ul class="nav">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about/">Shop</a></li>
-  <li><a href="/work/">Gear</a></li>
-  <li><a href="/clients/">New Products</a></li>
-  <li><a href="/contact/">Contact Me</a></li>
-</ul>
-      <hr>
-      </div>
-    </div>
-  </head>
-  <body>
-<style>
+    <style>
 body {font-family: Copperplate, Courier New;}
 * {box-sizing: border-box;}
 
@@ -66,13 +48,38 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 </style>
-</head>
-<body>
+<script>
+  function submitForm()
+        {
+          document.myform.target = "myActionWin";
+          window.open("","YOUR THANK YOU PAGE URL","width=500,height=300,toolbar=0");
+          document.myform.submit();
+        }
+  </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Tyree's Coffee</h1>
+    
+    
+    <div>
+      <ul class="nav">
+  <li><a href="/Final/">Home</a></li>
+  <li><a href="/Final/shop/shop.html">Shop</a></li>
+  <li><a href="/Final/gear/gear.html">Gear</a></li>
+  <li><a href="/Final/hours/hours.html">Hours</a></li>
+  <li><a href="/Final/contactme/contactme.html">Contact Me</a></li>
+</ul>
+      <hr>
+      </div>
+    </div>
+  </head>
+  
 
 <h3>Contact Me</h3>
 
 <div class="container">
-  <form action="/action_page.php">
+  <form name="myform" action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
